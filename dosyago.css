@@ -1,0 +1,122 @@
+  :root {
+    min-height: 100%;
+    height: 100%;
+    font-size: 21px;
+    line-height: 1.15;
+    --near-black: #111;
+    --near-white: #f4f4f4;
+    --silver-9: #999;
+  }
+  .no-css-name {
+    display: none;
+  }
+  .corp-name::after {
+    content: "DOSYCORP"; 
+  }
+  body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--near-white);
+    color: var(--near-black);
+  }
+  main {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 34em;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  .mt0 {
+    margin-top: 0;
+  }
+  .solid {
+    line-height: 1;
+  }
+  .fw3 {
+    font-weight: 300;
+  }
+  .f4 {
+    font-weight: 1.25rem;
+  }
+  .pl0 {
+    padding-left: 1rem;
+  }
+  .pl3 {
+    padding-left: 1rem;
+  }
+  .f2 {
+    font-size: 1.5rem;
+  }
+  .f5 {
+    font-size: 2rem;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+  .bb {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: var(--silver-9);
+  }
+
+  .mb3 {
+    margin-bottom: 1rem;
+  }
+
+  .mt2 {
+    margin-top: 0.5rem;
+  }
+
+  .lsp-out {
+    list-style-position: outside;
+  }
+
+  .lst-sq {
+    list-style-type: square;
+  }
+
+  .mt4 {
+    margin-top: 2rem;
+  }
+
+  .f4 {
+    font-size: 1.25rem;
+  }
+
+  .db {
+    display: block;
+  }
+
+  .helvetica {
+    font-family: helvetica neue,helvetica,sans-serif;
+  }
+  p {
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 25em) {
+    .f5 {
+      font-size: 3.2rem;
+    }
+    .corp-name::after {
+      content: "The Dosyago Corp."; 
+    }
+  }
+
+  @media screen and (min-width: 40em) {
+    .corp-name::after {
+      content: "The Dosyago Corporation"; 
+    }
+    .f5 {
+      font-size: 5rem;
+    }
+    .f2 {
+      font-size: 2.25rem;
+    }
+    .pl0 {
+      padding-left: 0;
+    }
+  } 
