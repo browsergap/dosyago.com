@@ -19,6 +19,7 @@
     margin: 0;
     background: var(--near-white);
     color: var(--near-black);
+    scroll-behavior: smooth;
   }
   main {
     position: relative;
