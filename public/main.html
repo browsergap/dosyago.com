@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html land=en-US>
+<meta charset=utf8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>The Dosyago Corporation</title>
+<style>
+  section:not(:target) {
+    display: none;
+  }
+  section:target *, section:target {
+    display: block;
+  }
+</style>
+<section id=main>
+  <h1>Displayed</h1>
+  <p>Awesome</p>
+  <a href=#menu>Ok</a>
+</section>
+<section id=menu>
+  <h1>Hidden</h1>
+  <a href=#main>Good</a>
+</section>

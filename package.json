@@ -1,0 +1,23 @@
+{
+  "name": "@dosy-private/dosyago.com",
+  "version": "2.0.1",
+  "description": "home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosycorp/dosyago.com.git"
+  },
+  "author": "@dosy",
+  "bugs": {
+    "url": "https://github.com/dosycorp/dosyago.com/issues"
+  },
+  "homepage": "https://github.com/dosycorp/dosyago.com#readme",
+  "dependencies": {
+    "esm": "^3.2.22",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11"
+  }
+}
