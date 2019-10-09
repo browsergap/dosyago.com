@@ -5,13 +5,23 @@
     display: auto;
   }
   section::before {
-    content: attr(id);
+    content: "DOSYAGO.COM -> " attr(id);
+    position: sticky;
+    top: 0.5em;
+    background: darkorange;
+    color: crimson;
+    padding: 0 0.5em;
     display: block;
     margin: 0.5rem 0;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
   }
   a[href^="#"]::before {
     content: attr(href);
     display: inline;
+  }
+  section {
+    max-height: 85vh;
+    overflow-y: auto;
+    border-bottom: thick solid darkorange;
   }
