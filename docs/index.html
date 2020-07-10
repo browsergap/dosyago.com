@@ -1,7 +1,78 @@
 <!DOCTYPE html>
-<html land=en-US>
-<meta charset=utf8>
-<meta name=viewport content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>The Dosyago Corporation</title>
-<meta http-equiv=refresh content=0;URL=main.html#main>
-<a rel=canonical href=main.html#main>Click here if not redirected.</a>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width,initial-scale=1>
+  <title>Dosyago</title>
+  <style>
+    :root {
+      font: 16px Optima, serif;
+    }
+
+    :root, body {
+      height: 100%; 
+    }
+
+    body {
+      display: flex;
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      background: navy;
+      align-items: center;
+      justify-content: center;
+    }
+
+    article.logo {
+      width: 50vmin; 
+      height: 50vmin;
+      border-radius: 50vmin;
+      color: transparent;
+      border: thick solid white;
+      text-align: center;
+      line-height: 50vmin;
+      font-size: 25vmin;
+      user-select: none;
+      transition: all 1.618s cubic-bezier(0.618,0.518,0.137,0.246);
+      animation: beat 9.7082039325s infinite;
+    }
+
+    article.logo:active {
+      border-width: 2rem;
+      color: white;
+    }
+
+    @keyframes beat {
+      0% {
+        color: transparent;
+        border-width: thick;
+      }
+      25% {
+        border-width: 2rem;
+        color: white;
+      }
+      50% {
+        border-width: 2rem;
+        color: white;
+      }
+      75% {
+        color: transparent;
+        border-width: thick;
+      }
+      100% {
+        color: transparent;
+        border-width: thick;
+      }
+    }
+  </style>
+  <script>
+    function reveal(event) {
+      window.open(`https://github.com/dosyago`);
+    }
+  </script>
+  <main>
+    <article class=logo onclick="reveal(event);">D</article> 
+  </main>
+
